@@ -6,11 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\VUE.Aplicacion\VUE.Aplicacion.csproj" />
-    <ProjectReference Include="..\Vue.Infraestructura\VUE.Infraestructura.csproj" />
   </ItemGroup>
 
 

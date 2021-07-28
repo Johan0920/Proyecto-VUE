@@ -3,11 +3,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using VUE.Dominio.Modelos;
 using VUE.Dominio.Repositorios;
-using VUE.Infraestructura.Persistencia.InsightDatabase.Repositorios;
 
 namespace VUE.Aplicacion.CasosUso
 {
-    public class RegistrarContribuyenteRequest:IRequest<RegistrarContribuyenteResult>
+    public  class RegistrarContribuyenteRequest:IRequest<RegistrarContribuyenteResult>
     {
         public Contribuyente contribuyente { get; set; }
 
@@ -19,7 +18,7 @@ namespace VUE.Aplicacion.CasosUso
         public string Mensaje { get; set; }
         public int IdContribuyente { get; set; }
     }
-    public class RegistrarContribuyente : IRequestHandler<RegistrarContribuyenteRequest, RegistrarContribuyenteResult>
+    public class RegistrarContribuyente : IRequestHandler <RegistrarContribuyenteRequest, RegistrarContribuyenteResult>
     {
         private readonly IContribuyenteRepositorio _context;
 

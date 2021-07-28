@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VUE.Dominio\VUE.Dominio.csproj" />
-    <ProjectReference Include="..\Vue.Infraestructura\VUE.Infraestructura.csproj" />
   </ItemGroup>
 
 </Project>
