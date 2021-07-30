@@ -24,6 +24,7 @@ namespace VUE.API.Controllers
             Mediator = mediator;
             Mapeador = mapeador;
         }
+        [Route("api/[controller]/[RegistrarContribuyente]")]
         [HttpPost]
         public async Task<IActionResult> RegistrarContribuyente ([FromBody] ContribuyenteModel contribuyente)
         {
@@ -45,7 +46,7 @@ namespace VUE.API.Controllers
                 return BadRequest(resultadoBusqueda);
             }
         }
-
+        [Route("api/[controller]/[ActualizarContribuyente]")]
         [HttpPost]
         public async Task<IActionResult> ActualizarContribuyente([FromBody] ContribuyenteModel contribuyente)
         {
